@@ -94,7 +94,7 @@ html, body {
 }
 
 .skills__wrapper {
-    margin-top: 90px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     text-align: center;

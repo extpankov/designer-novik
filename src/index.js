@@ -14,3 +14,19 @@ document.querySelector('.header__xmark').addEventListener('click', function() {
     document.querySelector('.header__bars').style.display = 'block';
     document.querySelectorAll('.header__xmark, .header__nav').forEach((selector) => { selector.style.display = 'none' })
 })
+
+document.querySelectorAll('.header__button').forEach((el) => {
+    el.addEventListener('click', () => {
+        if (window.innerWidth <= 1024) {
+            document.querySelectorAll('main, footer, .header__info-name, .header__info-desc, .header__ph').forEach((selector) => {
+                selector.style.display = 'block';
+            });
+            document.querySelector('.header__bars').style.display = 'block';
+            document.querySelectorAll('.header__xmark, .header__nav').forEach((selector) => { selector.style.display = 'none' })
+        }
+        document.querySelectorAll('#' + el.id)[1].scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+    })
+})
