@@ -257,7 +257,7 @@ html, body {
     .header__ph img { width: 100%; }
     .header__ph img:first-child { display: none; }
     .header__ph img:last-child { display: block; }
-    .skills__name { margin-bottom: 50px; }
+    .skills__name { margin: 100px 0 50px 0; }
     .skills__container { flex-direction: column }
     .skills__case { margin-bottom: 70px; }
     .skills__case:last-child { margin: 0; }
